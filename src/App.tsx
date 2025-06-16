@@ -79,13 +79,15 @@ function App() {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center space-x-3">
-            <div className="p-2 bg-blue-600 rounded-lg">
-              <MapPin className="w-8 h-8 text-white" />
-            </div>
+            <a href="/">
+              <div className="p-2 bg-blue-600 rounded-lg">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+            </a>
             <div>
               <h1 className="text-3xl font-bold text-gray-900">IP Tracker</h1>
               <p className="text-gray-600">
-                Discover the location and details of any IPv4 or IPv6 address
+                Discover the location and details of any IP address
               </p>
             </div>
           </div>
