@@ -151,7 +151,7 @@ function App() {
           )}
         </div>
 
-        {!ipInfo && (
+        {!ipInfo && !error && (
           <div className="mt-8">
             <LocalIPGuide />
           </div>
@@ -172,7 +172,7 @@ function App() {
             />
           )}
 
-          {ipInfo && <IPCard ipInfo={ipInfo} />}
+          {ipInfo && !error && <IPCard ipInfo={ipInfo} />}
 
           {/* Local IP Guide - Show after IP details */}
           {ipInfo && (
